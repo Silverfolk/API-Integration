@@ -40,6 +40,16 @@ const Register = () => {
 
   return (
     <div className="container mx-auto mt-8 p-4">
+      <div className="mb-8 bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-4 rounded-md">
+        <p className="font-semibold">Registration Instructions:</p>
+        <ul className="list-disc pl-4">
+          <li>Full Name - Can not be null</li>
+          <li>Email - Validate Email</li>
+          <li>Mobile No - Number type with a length of 10</li>
+          <li>Password - Validation with a minimum length of 8 and alphanumeric</li>
+          <li>Confirm Password - Must match with Password</li>
+        </ul>
+      </div>
       <h2 className="text-2xl font-semibold mb-4">Sign Up</h2>
       <form onSubmit={handleSubmit} className="max-w-md mx-auto">
         {/* Full Name */}
