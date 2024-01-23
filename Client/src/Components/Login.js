@@ -61,7 +61,7 @@ const Login = () => {
             id="password"
             name="password"
             minLength="8"
-            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@]{8,}$"
             value={formData.password}
             onChange={handleChange}
             className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring focus:border-blue-300"
